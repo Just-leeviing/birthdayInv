@@ -5,7 +5,7 @@ const main = document.getElementById("main");
 const opening = document.getElementById("opening");
 const reserve = document.getElementById("reserve");
 const bgm = document.getElementById("bgm");
-const scriptURL = "https://script.google.com/macros/s/AKfycby7hqkQ0LbaXB1R-dsPfeshRw63rN4ji9szhyWN86grol6W9-UDQFBBbYWhWyeR65oR/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzhVNd7pG4MGOp40emgn_54Kt5lQYK26ebs3Lmalm0Rv-N6hSWZw5xi9L0xjIPKSReG/exec";
 
 book.addEventListener("click", () => {
     book.style.display = "none";
