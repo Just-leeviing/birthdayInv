@@ -181,6 +181,7 @@ body{
 
 #main{
     display: none;
+    overflow-x: hidden;
 }
 #greet{
     display: flex;
