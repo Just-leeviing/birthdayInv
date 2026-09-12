@@ -27,7 +27,7 @@ book.addEventListener("click", () => {
 reserve.addEventListener("click", async () => {
     const name = document.getElementById("name").value;
     const attendance = document.querySelector(
-        'input[name="attendance]:checked'
+        'input[name="attendance"]:checked'
     )?.value;
 
     if (!name || !attendance) {
