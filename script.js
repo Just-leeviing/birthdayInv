@@ -26,6 +26,9 @@ book.addEventListener("click", () => {
 
 reserve.addEventListener("click", async () => {
     const name = document.getElementById("name").value;
+    const form = document.getElementById("form");
+
+
     const attendance = document.querySelector(
         'input[name="attendance"]:checked'
     )?.value;
@@ -35,6 +38,10 @@ reserve.addEventListener("click", async () => {
         return;
     }
 
+    form.innerHTML = `
+    <h2 id="load">LOADING..</h2>
+    <img id="loader" src="resources/magic.png">`;
+    
     try {
         await fetch(scriptURL,{
             method:"POST",
@@ -43,7 +50,9 @@ reserve.addEventListener("click", async () => {
                 attendance:attendance
             })
         });
-        alert("Reservation submitted!");
+        form.innerHTML = `
+        <h2 id='load'>RESERVED!</h2>
+        <img id="check" src="resources/check.png">`;
     } catch (error){
         console.error(error);
         alert("OMG something went wrong, so sorry..");

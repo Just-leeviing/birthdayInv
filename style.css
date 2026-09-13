@@ -65,6 +65,12 @@
     
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body{
     width: 100%;
     height: 100%;
@@ -338,13 +344,45 @@ body{
     padding: 5vw;
     border-radius: 5%;
     border: 5px solid pink;
+    min-height: 35vh;
 }
 
-button{
+#reserve{
     background-color: pink;
     border: 0;
     padding: 3%;
     width: 100%;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+#reserve:active {
+    transform: scale(0.95);
+    box-shadow: none;
+    background-color: pink;
+}
+
+#loader {
+    width: 55vw;
+    position: absolute;
+    animation: spin 3s ease-in-out infinite;
+    margin-top: 10%;
+    left: 20%;
+}
+
+#check{
+    width: 40vw;
+    position: absolute;
+    margin-top: 20%;
+    left: 25%;
+}
+
+#load {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    color: pink;
+    margin-top: 5%;
+    left: 30%;
 }
 
 #choice{
