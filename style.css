@@ -366,14 +366,14 @@ body{
     width: 55vw;
     position: absolute;
     animation: spin 3s ease-in-out infinite;
-    margin-top: 10%;
+    margin-top: 7%;
     left: 20%;
 }
 
 #check{
     width: 40vw;
     position: absolute;
-    margin-top: 20%;
+    margin-top: 15%;
     left: 25%;
 }
 
