@@ -54,8 +54,9 @@ reserve.addEventListener("click", async () => {
         <h2 id='load'>RESERVED!</h2>
         <img id="check" src="resources/check.png">`;
     } catch (error){
-        console.error(error);
-        alert("OMG something went wrong, so sorry..");
+        form.innerHTML = `
+        <h2 id='load'>ERROR, refresh pls</h2>
+        <img id="check" src="resources/fail.png">`;
     }
 });
         
