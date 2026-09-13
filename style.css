@@ -366,15 +366,15 @@ body{
     width: 55vw;
     position: absolute;
     animation: spin 3s ease-in-out infinite;
-    margin-top: 7%;
-    left: 20%;
+    top: 45%;
+    left: 20vw;
 }
 
 #check{
     width: 40vw;
     position: absolute;
-    margin-top: 15%;
-    left: 25%;
+    top: 50%;
+    left: 25vw;
 }
 
 #load {
@@ -382,7 +382,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color: pink;
     margin-top: 5%;
-    left: 30%;
+    left: 20vw;
+    font-size: 10vw;
 }
 
 #choice{
