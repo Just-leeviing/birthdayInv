@@ -88,32 +88,32 @@ body{
 }
 
 #opening h1{
-    padding-top: 50%;
+    padding-top: 43%;
     margin-bottom: 0vw;
     animation: fadeIn 1s ease;
     font-family: "priestacy";
     z-index: 2;
     
-    text-shadow: 2vw 2vw 0vw rgb(137, 106, 106),
-    4vw 4vw 8vw rgba(0, 0, 0, 0.25);
+    text-shadow: 
+        2vw 2vw 0vw rgb(137, 106, 106),
+        4vw 4vw 8vw rgba(0, 0, 0, 0.25);
     position: absolute;
 }
 #opening p{
-    margin-top: 0vw;
+    margin-top: 75%;
     animation: fadeIn 1s ease;
     font-family: "Comic Relief";
     z-index: 2;
     color: rgb(137, 106, 106);
     position: absolute;
-    top: 40vh;
 }
 
 
 #book{
+    margin-top: 100%;
     width: 60vw;
     animation: bounce 3s ease-in-out infinite;
     z-index: 2;
-    top: 55vh;
     position: absolute;
 }
 #bookOpen{
@@ -127,15 +127,15 @@ body{
 }
 #textb{
     z-index: 1;
-    top:30%;
+    margin-top: 56%;
     width: 90vw;
-    position: fixed;
+    position: absolute;
     animation: floating 4s ease-in-out infinite;
 }
 #tiara{
     width: 30vw;
     animation: floating 5s ease-in-out infinite;
-    top: 23vh;
+    margin-top:40%;
     position: absolute;
     z-index: 2;
 }
@@ -144,14 +144,14 @@ body{
     animation: floating 5s ease-in-out infinite;
     right: 0vw;
     position: absolute;
-    top: 24vh;
+    margin-top: 40%;
     z-index: 2;
 }
 #cham{
     width: 30vw;
     animation: floating 5s ease-in-out infinite;
     position: absolute;
-    top: 47vh;
+    margin-top: 82%;
     left: 2vw;
     z-index: 2;
 }
@@ -188,25 +188,28 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 30vh;
+    padding-top: 45%;
     padding-bottom: 30vh;
     margin: 0 0 0 0;
     font-family:"Instrument Serif";
     color: rgb(58, 31, 31);
-    background-image: url("resources/bg.jpeg");
-    background-size: cover;
+}
+#bg{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 #lantern1{
     position: absolute;
     width: 25vw;
-    top: 5vh;
+    margin-top:-44%;
     left: 37vw;
     animation: floating 3s ease-in-out infinite;
 }
 #lily2{
     position: absolute;
     width: 70vw;
-    top: 10vh;
+    margin-top: -20%;
     left: -25vw;
     animation: floating 2s ease-in-out infinite;
 }
@@ -271,10 +274,11 @@ body{
 }
 
 #location {
+    position: absolute;
+    margin-top: -150%;
     text-align: center;
-    margin: 0;
     padding: 5%;
-    transform: translate( 4%, -350%);
+    left: 5%;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 5%;
     width: 80vw;
@@ -293,16 +297,17 @@ body{
 }
 
 #dc {
+    position: absolute;
+    margin-top: -100%;
     text-align: center;
     font-size: 6vw;
-    position: absolute;
-    bottom: -160vh;
     left: 10vw;
 }
 
 
 
 #rsvp {
+    margin-top: 70%;
     background-color: rgb(229, 229, 229);
     padding: 5vw;
     font-family: Sans-serif;
@@ -316,7 +321,7 @@ body{
 }
 
 #rsv{
-    margin-top: 10vh;
+    margin-top: 73%;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 127, 148);
     text-align: center;
@@ -324,7 +329,6 @@ body{
     padding: 0;
     z-index: 4;
     position: absolute;
-    top: 290vh;
     left: 15vw;
     animation: zoom 2s ease-in-out infinite;
 }
@@ -362,21 +366,21 @@ button{
     width: 50vw;
     position: absolute;
     right: 3vw;
-    top: 85vh;
+    margin-top: -30%;
     animation: floating 4s ease-in-out infinite;
 }
 #lanterns{
     width: 50vw;
     position: absolute;
     right: 0vw;
-    top: 130vh;
+    margin-top: -170%;
     animation: floating 2s ease-in-out infinite;
 }
 #magic{
     width: 50vw;
     position: absolute;
     left: 0;
-    top: 175vh;
+    margin-top: -70%;
     z-index: 4;
     animation: floating 4s ease-in-out infinite;
 }
@@ -386,7 +390,7 @@ button{
     left: 45vw;
     z-index: 4;
     animation: floating 4s ease-in-out infinite;
-    top: 290vh;
+    margin-top: 160%;
 }
 #rapunzel{
     width: 20vw;
@@ -397,12 +401,12 @@ button{
     width: 20vw;
     position: absolute;
     right: 10vw;
-    top: 20vh;
+    top: 40%;
 }
 #lanterns2{
     position: absolute;
     left: -10vw;
     width: 70vw;
-    top: 260vh;
+    margin-top: 100%;
     animation: floating 2s ease-in-out infinite;
 }
