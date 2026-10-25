@@ -347,6 +347,12 @@ body{
     min-height: 35vh;
 }
 
+#form p {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: larger;
+}
+
 #reserve{
     background-color: pink;
     border: 0;
